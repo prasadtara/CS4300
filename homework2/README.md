@@ -1,4 +1,4 @@
-# Movie App (Django + DRF)
+# Movie App (Django + REST Framework)
 ```
 Tara Prasad
 CS4300
