@@ -1,8 +1,9 @@
 # Movie App (Django + DRF)
-
+```
 Tara Prasad
 CS4300
 Homework 2
+```
 
 Live Deployment:\
 https://homework2-movieapp.onrender.com/movies/
