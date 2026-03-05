@@ -8,8 +8,9 @@ application is deployed on **Render** and uses **PostgreSQL in
 production**.
 
 ------------------------------------------------------------------------
-
-# Tech Stack
+NOTE: Google Gemini was used for help with debugging, questions about software, and project structure. No entire files or blocks of code were generated using this tool, but it was used to fix some errors within the code.
+------------------------------------------------------------------------
+# What This Uses
 
 -   Django 4.2.28
 -   Django REST Framework
