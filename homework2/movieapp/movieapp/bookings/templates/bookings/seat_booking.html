@@ -1,0 +1,64 @@
+{% extends "bookings/base.html" %}
+{% block title %}Seat Booking{% endblock %}
+
+{% block content %}
+
+<h2 class="mb-1">{{ movie.title }}</h2>
+<p class="text-muted">
+Release: {{ movie.release_date }} • Duration: {{ movie.duration }} mins
+</p>
+
+<hr>
+
+<form method="post">
+{% csrf_token %}
+
+<div class="mb-3">
+<label class="form-label">Your name</label>
+<input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="text-center mb-4">
+<div class="bg-light border rounded py-2 fw-semibold">
+SCREEN
+</div>
+</div>
+
+<!-- Responsive seat grid -->
+<div class="container">
+<div class="row g-2 justify-content-center">
+
+{% for seat in seats|slice:":60" %}
+
+<div class="col-4 col-sm-3 col-md-2 text-center">
+
+{% if seat.booking %}
+<button class="btn btn-danger w-100" disabled>
+{{ seat.seat_number }}
+</button>
+{% else %}
+<button type="submit"
+name="seat_id"
+value="{{ seat.id }}"
+class="btn btn-success w-100">
+{{ seat.seat_number }}
+</button>
+{% endif %}
+
+</div>
+
+{% endfor %}
+
+</div>
+</div>
+
+<hr>
+
+<p>
+<span class="badge bg-success">Available</span>
+<span class="badge bg-danger">Booked</span>
+</p>
+
+</form>
+
+{% endblock %}
