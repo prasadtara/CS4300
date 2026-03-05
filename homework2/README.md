@@ -1,5 +1,9 @@
 # Movie App (Django + DRF)
 
+- Tara Prasad
+- CS4300
+- Homework 2
+
 Live Deployment:\
 https://homework2-movieapp.onrender.com/movies/
 
@@ -8,7 +12,7 @@ application is deployed on **Render** and uses **PostgreSQL in
 production**.
 
 ------------------------------------------------------------------------
-NOTE: Google Gemini was used for help with debugging, questions about software, and project structure. No entire files or blocks of code were generated using this tool, but it was used to fix some errors within the code.
+- NOTE: Google Gemini was used for help with debugging, questions about software, and project structure. No entire files or blocks of code were generated using this tool, but it was used to fix some errors within the code.
 ------------------------------------------------------------------------
 # What This Uses
 
